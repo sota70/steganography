@@ -10,18 +10,18 @@ python3 text_steg.py [hide | seek] [options]
 
 ## Hide secret message:<br />
 ```
-python3 text_steg.py -o [output path] -s [secret message file path] -c [cover file path]<br /><br />
+python3 text_steg.py -o [output path] -s [secret message file path] -c [cover file path]
 ```
 Example:<br />
 ```
-python3 text_steg.py -o hidden_text.txt -s secret.txt -c cover.txt<br />
+python3 text_steg.py -o hidden_text.txt -s secret.txt -c cover.txt
 ```
 
 ## Discover secret message:<br />
 ```
-python3 text_steg.py -o [output path] -s [file path secret message is hidden]<br /><br />
+python3 text_steg.py -o [output path] -s [file path secret message is hidden]
 ```
 Example:<br />
 ```
-python3 text_steg.py -o discovered_text.txt -s hidden_text.txt<br />
+python3 text_steg.py -o discovered_text.txt -s hidden_text.txt
 ```
