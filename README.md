@@ -1,7 +1,7 @@
 # Space Replacing Steganography
-This is a script that allows you to hide secret message in other text file.<br />
+This is a script that allows you to hide secret message in a text file.<br />
 The script breaks secret message down to binary level then replace the binary with 2 different spaces<br />
-then put them in other text file which is called cover file.
+then put them in the text file which is called cover file.
 
 # Usage
 ```
