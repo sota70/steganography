@@ -5,9 +5,9 @@ def convert_bin_into_char(binary: str) -> str:
     return chr(int(binary[0:8], 2))
 
 def replace_space_with_text(space: str) -> str:
-    japanese_space: str = "　"
+    nobreak_space: str = "\u00A0"
     space_bin: str = "".join(list(map(
-        lambda s_bin: "1" if s_bin == japanese_space else "0",
+        lambda s_bin: "1" if s_bin == nobreak_space else "0",
         space
     )))
     divided_space_bin: list[str] = split_text(space_bin, 8)
@@ -16,10 +16,10 @@ def replace_space_with_text(space: str) -> str:
     )))
 
 def find_hidden_text(cover_text: str) -> str:
-    normal_space: str = " "
-    japanese_space: str = "　"
+    normal_space: str = "\u0020"
+    nobreak_space: str = "\u00A0"
     space_text: str = "".join(list(map(
-        lambda char: char if char in [normal_space, japanese_space] else "",
+        lambda char: char if char in [normal_space, nobreak_space] else "",
         cover_text
     )))
     return replace_space_with_text(space_text)
