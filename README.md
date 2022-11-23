@@ -1,7 +1,7 @@
 # Space Replacing Steganography
-This is a script that allows you to hide secret message in other text file.\n
-The script breaks secret message down to binary level then replace the binary with 2 different spaces\n
-then put them in other text file which is called cover file.\n
+This is a script that allows you to hide secret message in other text file.
+The script breaks secret message down to binary level then replace the binary with 2 different spaces
+then put them in other text file which is called cover file.
 
 # Usage
 python3 text_steg.py [hide | seek] [options]
